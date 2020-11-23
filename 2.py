@@ -8,11 +8,17 @@ class circle():
         return self.radius
         
     def GetColor(self):
-        return self.GetColor
+        return self.color
 
     def GetArea(self): 
         return (self.radius**2)* math.pi
         
+    def SetRadius(self):
+        return self.radius
+    
+    def SetColor(self):
+        return self.color
+
 class cilinder(circle):
     def __init__(self,height):
         self.height = height
@@ -22,5 +28,3 @@ class cilinder(circle):
 
 
 Lingkaran = circle (2,"red")
-
-print(Lingkaran.cilinder)
